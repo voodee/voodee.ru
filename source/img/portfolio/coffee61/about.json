@@ -1,0 +1,20 @@
+﻿{
+    "name": "coffee61",
+    "fullName": "Интерент-магазин кофе и кофемашин — coffee61",
+    "desc": "Разработка макета и печать необычной визитной карточки. В собраном состоянии имеет размеры стандартной визитки и легко помещается в визитницу.",
+    "url": "http://coffee61.ru/",
+    "items": [
+        {
+            "img": "true",
+            "src": "portfolio/coffee61/slide-1.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/coffee61/slide-2.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/coffee61/slide-3.jpg"
+        }
+    ]
+}

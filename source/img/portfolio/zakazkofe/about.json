@@ -1,0 +1,24 @@
+﻿{
+    "name": "ЗаказКофе",
+    "fullName": "Магазин элитного кофе и кофемашин — ZakazKofe",
+    "desc": "Отзывчивый макет, кросбраузерный и оптимизированный для SEO шаблон. Получился вкусный и живой сайт, который сразу внушает мысли о чашечке кофе.",
+    "url": "http://zakazkofe.ru/",
+    "items": [
+        {
+            "img": "true",
+            "src": "portfolio/zakazkofe/slide-1.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/zakazkofe/slide-2.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/zakazkofe/slide-3.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/zakazkofe/slide-4.jpg"
+        }
+    ]
+}

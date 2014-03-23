@@ -1,0 +1,20 @@
+﻿{
+    "name": "Ваш проект",
+    "fullName": "Ваш проект",
+    "desc": "Меня зовут Арестович Роман. Я разработчик, фанатик, визионер и учитель дизайна. <br /><br />Я перфекционист. Я не знаю как будет выглядеть мой новый проект, но я уверен, что сделаю его хорошо.<br/><br/><a href='http://voodee.ru/resume.pdf' class='next-to-visit'>Моё резюме</a>",
+    "url": "",
+    "items": [
+        {
+            "video": "true",
+            "src": "<iframe width=\"722\" height=\"413\" src=\"//www.youtube.com/embed/9W4S447Envg\" frameborder=\"0\" allowfullscreen></iframe>"
+        }
+    ]
+}
+
+
+
+
+
+
+
+

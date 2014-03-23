@@ -1,0 +1,2538 @@
+@font-face
+  font-family: 'pf_din_text_cond_probold'
+  src: url('../fonts/pfdintextcondpro-bold.eot')
+  src: url('../fonts/pfdintextcondpro-bold.eot?#iefix') format("embedded-opentype"), url('../fonts/pfdintextcondpro-bold.woff') format("woff"), url('../fonts/pfdintextcondpro-bold.ttf') format("truetype"), url('../fonts/pfdintextcondpro-bold.svg#pf_din_text_cond_probold') format("svg")
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'molot'
+  src: url('../fonts/molot.eot')
+  src: url('../fonts/molot.eot?#iefix') format('embedded-opentype'), url('../fonts/molot.woff') format('woff'), url('../fonts/molot.ttf') format('truetype'), url('../fonts/molot.svg#molotregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+@font-face
+  font-family: 'voodee'
+  src: url('../fonts/voodee.eot?45334602')
+  src: url('../fonts/voodee.eot?45334602#iefix') format("embedded-opentype"), url('../fonts/voodee.woff?45334602') format("woff"), url('../fonts/voodee.ttf?45334602') format("truetype"), url('../fonts/voodee.svg?45334602#voodee') format("svg")
+  font-weight: normal
+  font-style: normal
+
+
+[class^="icon-"]:before, [class*=" icon-"]:before
+  font-family: "voodee"
+  font-style: normal
+  font-weight: normal
+  speak: none
+  display: inline-block
+  text-decoration: inherit
+  width: 1em
+  margin-right: .2em
+  text-align: center
+  font-variant: normal
+  text-transform: none
+  line-height: 1em
+  margin-left: .2em
+
+.icon-mail-alt:before
+  content: '\e802'
+
+.icon-home:before
+  content: '\e801'
+
+.icon-phone:before
+  content: '\e803'
+  
+
+
+.icon-attach:before
+  content: '\e807'
+.icon-resize-small:before
+  content: '\e809'
+.icon-down-open:before
+  content: '\e808'
+.icon-scissors:before
+  content: '\e800'
+.icon-coffee:before
+  content: '\e805'
+.icon-puzzle:before
+  content: '\e806'
+.icon-twitter-bird:before
+  content: '\e804'
+.icon-up-open:before
+  content: '\e80a'
+.icon-info:before 
+  content: '\e80f'
+
+.icon-facebook:before
+  content: '\e80d'
+.icon-gplus:before
+  content: '\e80e'
+.icon-twitter:before
+  content: '\e80c'
+.icon-vkontakte:before
+  content: '\e80b'
+
+
+$line-geight: 96px
+
+html
+  overflow-x: hidden
+
+body
+  overflow-x: hidden
+  background: url('../img/bg.png') repeat 50% 50% 
+  color: #595959
+  
+  &.open-work
+    overflow: hidden
+    
+    #scrollUp
+      visibility: hidden
+  
+.ember-view
+  &.main
+    overflow-x: hidden
+    position: relative
+  
+    #parallax
+      display: none
+      position: absolute
+      background: url('../img/parallax.png') repeat-y 50% 0
+      top: 0
+      width: 100%
+      height: 100%
+      z-index: 6
+  
+  
+.text
+  &.big-t
+    font-size: 1.5em
+    line-height: 1.15em
+  &.small-t
+  
+
+    
+  
+.section
+  position: relative
+  
+  .page
+    width: 980px
+    margin: 0 auto
+    
+  h2
+    text-align: center
+    font-family: 'pf_din_text_cond_probold'
+    font-size: 2.25rem
+    border-bottom: 1px dashed #9f9e96
+    color: #2d2d2d
+    line-height: 1.23em
+    letter-spacing: -1px
+    
+    -webkit-mask-image: url('../img/text-mask.png')
+    -moz-mask-image: url('../img/text-mask.png')
+    mask-image: url('../img/text-mask.png')
+  
+  &#home
+    //background: url('../img/illustration.jpg') repeat 50% 50% fixed  
+    background: url('../img/illustration-new.jpg') repeat 50% 50%  
+    background-size: cover
+    
+    border-image: url('../img/headlinework.jpg') 13 round round
+    border-width: 0
+    border-top-width: 13px
+    height: 661px
+    
+    position: fixed
+    width: 100%
+    
+    #scene
+      @include transform(translate3d(0,0,0))
+      @include transform-style(preserve-3d)
+      @include backface-visibility(hidden)
+      
+      margin: 0
+      padding: 0
+      height: 100%
+      
+      list-style: none
+      
+      overflow: hidden
+      
+      li
+        height: 100%
+        
+        > div
+          height: 100%
+          @include transform(translate3d(0,0,0))
+          @include transform-style(preserve-3d)
+          @include backface-visibility(hidden)
+          
+          width: 200%
+          //height: 200%
+          margin-left: -50%
+          //margin-top: -50%
+          
+         
+        .cigar
+          background: url('../img/illustration-cigar.png') no-repeat 50% 50%
+          //@include animation(wave-easy 12s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955))
+          
+          &.smoke-box
+            position: relative
+            overflow: hidden
+            
+            .smoke
+              position: absolute
+              width: 132px
+              height: 234px
+              bottom: 320px
+              //left: 60px
+              left: 50%
+              margin-left: -660px
+              background: url('../img/smoke.png') repeat 50% 50%
+          
+        .shaver
+          background: url('../img/illustration-shaver.png') no-repeat 50% 50%
+          //@include animation(illustration-one 12s infinite alternate cubic-bezier(0.455, 0.03, 0.515, 0.955))
+          
+        .knife
+          background: url('../img/illustration-knife.png') no-repeat 50% 50%
+          //@include animation(illustration-two 7.55556s 0.1s infinite linear)
+          
+        .pistol
+          background: url('../img/illustration-pistol.png') no-repeat 50% 50%
+          //@include animation(illustration-three 5s 0.1s infinite linear)
+          
+        .hz
+          background: url('../img/illustration-hz.png') no-repeat 50% 50%
+          
+        .hz1
+          background: url('../img/illustration-hz1.png') no-repeat 50% 50%
+          
+        .hz2
+          background: url('../img/illustration-hz2.png') no-repeat 50% 50%
+          
+        .hz3
+          background: url('../img/illustration-hz3.png') repeat 50% 50%
+          
+        .stikers
+          background: url('../img/illustration-stikers.png') no-repeat 50% 50%
+        
+        .back
+          background: url('../img/illustration-new.jpg') no-repeat 50% 50%
+  
+  &#about
+    background: url('../img/bg-about.jpg') repeat 50% 50% 
+    //background: url('../img/b_about.png') repeat 50% 0
+    
+    
+    .page
+      padding: 2em 0 3.44em
+      
+      .me
+        background: url('../img/me.png') no-repeat 50% 50%
+
+        height: 30em
+      
+      .why,
+      .what
+        width: 27.5em
+        float: left
+        text-align: center
+        
+        .sub-title
+          border-bottom: 1px dashed #9f9e96
+        
+        .desc
+          margin-top: .75em
+          line-height: 1.3em
+          
+          .slide-text
+            font-weight: 600
+      
+      .what
+        width: 29.875em
+        float: right
+      
+      .box-twitter
+        clear: both
+        
+        a, a:link
+          color: #595959
+          text-decoration: none
+          
+        a:hover, a:focus
+          border-bottom: 1px solid
+          
+        
+      .twitter
+        background: url('../img/birdie.png') no-repeat 50% 2.375em
+        clear: both
+        padding: 7.89em 3em 0
+        text-align: center
+        
+      .signature
+        text-align: center
+        line-height: 2.9em
+  
+  &#work
+    display: none
+    height: 743px
+    background: url('../img/b_work.png') repeat 50% -5px
+    
+    
+    ul
+      width: 1140px
+      margin: 0 auto
+      list-style: none
+      padding: 0
+      padding-top: 55px
+    
+    
+      li 
+        float: left
+        width: 250px 
+        height: 259px 
+        margin-right: 15px
+        margin-bottom: 46px
+        position: relative
+        
+        .box-work
+          position: absolute
+          height: 200%
+          width: 100%
+          overflow-x: hidden
+          margin-top: -50%
+      
+        a
+          z-index: 1
+          height: 100%
+          width: 100%
+          position: absolute
+          zoom: 1
+          
+          background: url('../img/items/test.png') no-repeat 50% 50%
+          background-size: cover
+                
+          .hex-top,
+          .hex-bottom
+            position: absolute
+            height: 100%
+            @include transform(rotate(-1deg))
+            z-index: -1
+            overflow: hidden
+            background: inherit
+            @include backface-visibility(hidden)
+            width: 100%
+            top: 0
+            
+            &:before
+              content: ''
+              position: absolute
+              left: 0
+              z-index: -1
+              background: inherit
+              height: 400%
+              width: 100%
+              @include transform(rotate(1deg))
+              @include transform-origin(0 0)
+        
+          .hex-bottom
+            display: none
+            @include transform(rotate(1deg))
+                 
+            &:before
+              @include transform(rotate(-1deg))
+        
+          .border-top,
+          .border-bottom
+            position: absolute
+            height: 100%
+            @include box-sizing(border-box)
+          
+          .border-top
+            border: 8px solid #fff
+            border-left: 251px solid transparent
+            border-right-width: 0
+            border-bottom-width: 0
+            
+          .border-bottom
+            border: 32px solid #fff
+            border-right: 251px solid transparent
+            border-left-width: 0
+            border-top-width: 0
+          
+          
+        &:nth-child(1),
+        &:nth-child(5)
+          width: 251px
+        
+        
+        &:nth-child(2),
+        &:nth-child(6)
+          width: 301px
+          height: 284px
+        
+        
+        &:nth-child(3),
+        &:nth-child(7)
+          width: 266px
+          height: 304px
+        
+        
+        &:nth-child(4),
+        &:nth-child(8)
+          margin-right: 0
+          width: 277px
+          height: 288px
+        
+        &:nth-child(1)
+          height: 298px
+          margin-top: -7px
+          
+        &:nth-child(2)
+          a
+            .border-top
+              border-left-width: 301px
+            
+            .border-bottom
+              border-right: 0
+              border-left: 301px solid transparent
+              border-bottom-width: 25px
+               
+        &:nth-child(3)
+          margin-top: 11px 
+          
+          a
+            .border-top
+              border-left-width: 266px
+              
+            .border-bottom
+              border-right-width: 266px
+               
+        &:nth-child(4)
+          margin-top: 20px
+          
+          a
+            .border-top
+              border-left-width: 277px
+              
+            .border-bottom
+              border-right: 0
+              border-left: 301px solid transparent
+              border-bottom-width: 24px
+
+              
+  
+  &#grid
+    position: relative
+    height: 670px
+    background: url('../img/bg-work.jpg') repeat 50% 50% 
+    //background: url('../img/b_work.png') repeat 50% -5px
+    padding-top: 66px
+    
+    .hex-big
+      @include transform(rotate(1deg))
+      overflow: hidden
+      height: 585px
+      
+      width: 106%
+      margin-left: -3%
+      position: relative
+      
+      
+      .hex-big-container
+        @include transform(rotate(-1deg))
+        margin-top: -43px
+    
+    ul
+      width: 1140px
+      margin: 0 auto
+      list-style: none
+      padding: 0
+      //padding-top: 23px
+   
+      li
+        width: 253px
+        float: left
+        overflow: hidden
+        @include backface-visibility(hidden)
+        
+          
+        .grid-el
+          height: 324px
+          overflow: hidden
+          float: left
+          
+          .hex
+            @include transform(rotate(7deg))
+            width: 290px
+            height: 290px
+            margin: 18px 0 0 -18px
+            overflow: hidden
+            outline: 1px solid transparent
+            
+            .hex-container
+              @include transform(rotate(-7deg))
+              width: 253px
+              height: 324px
+              margin: -17px 0 0 17px
+              outline: 1px solid transparent
+            
+              a
+                position: relative
+                display: block
+                @include backface-visibility(hidden)
+                
+                .mask
+                  top: 0
+                  left: 0
+                  width: 100%
+                  height: 100%
+                  position: absolute
+                  opacity: 0
+                  @include transition(all 600ms linear)
+                  
+                h2
+                  position: absolute
+                  font-weight: 100
+                  left: 20px
+                  top: 50px
+                  letter-spacing: 0
+                  z-index: 2
+                  opacity: 0
+                  border-bottom: none
+                  @include transition(all 600ms linear)
+                    
+                
+                &:hover
+                  @include animation(tada 0.6s forwards)
+                  
+                  .mask
+                    opacity: 1
+                    background: rgba(238, 223, 200, .9)
+                    
+                  h2
+                    //opacity: 1
+                    @include animation(bounceInUp 0.6s ease)
+                    opacity: 1
+                                   
+                img
+                  width: 100%
+                  -ms-interpolation-mode: bicubic
+                  vertical-align: middle
+            
+            
+          &:nth-child(2)
+            margin-top: -21px
+            
+            .hex
+              height: 313px
+
+
+        &:nth-child(2)
+          margin-left: 11px
+          width: 302px
+          
+          .grid-el
+          
+            .hex
+              width: 335px
+              @include transform(rotate(-7deg))
+            
+              .hex-container
+                width: 304px
+                @include transform(rotate(7deg))
+            
+            &:nth-child(2)
+              .hex
+                height: 330px
+                width: 342px
+        
+
+        &:nth-child(3)
+          margin-left: 14px
+          width: 268px
+          
+          .grid-el
+            height: 350px
+          
+            .hex
+              height: 310px
+              width: 307px
+              
+              .hex-container
+                height: 353px
+                width: 273px
+          
+            //&:first-child
+            //  height: 316px
+          
+          
+        &:nth-child(4)
+          margin-left: 15px
+          width: 277px
+          
+          .grid-el
+            width: 277px
+            height: 348px
+          
+            .hex
+              height: 312px
+              width: 308px
+              @include transform(rotate(-7deg))
+            
+              .hex-container
+                height: 341px
+                width: 277px
+                @include transform(rotate(7deg))
+            
+            &:nth-child(2)
+              .hex
+                width: 314px
+                height: 328px
+
+
+  &#strategy
+    position: relative
+    height: 670px
+    padding-bottom: 40px
+    background: url('../img/bg.png') repeat 50% 50% 
+    //background: url('../img/b_strategy.png') repeat 50% 18px
+    
+    .strategy-content
+      height: 100%
+      background: url('../img/strategy.png') no-repeat 50% 83px
+      
+    ul.strategy-list
+      width: 1068px
+      margin: 0 auto
+      padding: 0
+      list-style: none
+      
+      li
+        width: 272px
+        float: left
+        padding-top: 310px
+        margin: 116px 42px 0
+        
+
+     
+          
+        .desc
+          text-align: center
+          color: #7a7a7a
+          margin-top: .4rem
+          
+        
+        &:nth-child(1)
+          background: url('../img/strategy-one.png') no-repeat 50% 0
+          
+        &:nth-child(2)
+          background: url('../img/strategy-two.png') no-repeat 50% 0
+          
+        &:nth-child(3)
+          background: url('../img/strategy-three.png') no-repeat 50% 0
+  
+  &#contact
+    background: url('../img/bg-contact.jpg') repeat 50% 50% 
+    //background: url('../img/b_contact0.png') repeat -311px 0
+    padding-bottom: 75px
+    
+    .contact-content
+      width: 980px
+      margin: 0 auto
+      background: url('../img/contact.png') no-repeat 0 50%
+    
+      .contact-left,
+      .contact-right
+        float: left
+        width: 640px
+      
+      .contact-right
+        float: right
+        
+      .contact-left
+        padding-top: 74px
+        padding-bottom: 40px
+        
+        .col-left,
+        .col-right
+          float: left
+          width: 50%
+          padding: 0 .4rem .4rem
+          @include box-sizing(border-box)
+        
+        .col-center,
+        col-bottom
+          clear: both
+          @include box-sizing(border-box)
+          padding: .4rem
+        
+        .col-bottom
+          text-align: right
+          @include box-sizing(border-box)
+          padding: .4rem
+          
+        input[type='text'],
+        textarea
+          width: 100%
+          padding: .3rem .8rem
+          @include box-sizing(border-box)
+          line-height: 2.2rem
+          font-size: 1.4rem
+          border: none
+          color: #000
+          outline: none
+          background: url('../img/bg-form.png') repeat 50% 50%
+          
+          &::-webkit-input-placeholder
+            color: rgba(0, 0, 0, .5)
+            -webkit-mask-image: url('../img/text-mask.png')
+            -moz-mask-image: url('../img/text-mask.png')
+            mask-image: url('../img/text-mask.png')
+        
+          &:-moz-placeholder
+            color: rgba(0, 0, 0, .5)
+            -webkit-mask-image: url('../img/text-mask.png')
+            -moz-mask-image: url('../img/text-mask.png')
+            mask-image: url('../img/text-mask.png')
+        
+          &::-moz-placeholder
+            color: rgba(0, 0, 0, .5)
+            -webkit-mask-image: url('../img/text-mask.png')
+            -moz-mask-image: url('../img/text-mask.png')
+            mask-image: url('../img/text-mask.png')
+        
+          &:-ms-input-placeholder
+            color: rgba(0, 0, 0, .5)
+            -webkit-mask-image: url('../img/text-mask.png')
+            -moz-mask-image: url('../img/text-mask.png')
+            mask-image: url('../img/text-mask.png')
+          
+        textarea
+          height: 200px
+          resize: none
+          
+        input[type='submit']
+          font-family: 'pf_din_text_cond_probold'
+          line-height: 2.2em
+          font-size: 1.3rem
+          border-width: 0
+          padding: 5px 1.3rem 0
+          color: #fff
+          background: url('../img/bg-button.png') repeat 50% 50%
+          text-transform: uppercase
+          
+          &:hover
+            color: #ccc
+          
+      .contact-right
+        width: 340px
+        margin: 0
+        padding: 32px 0 0 70px
+        list-style: none
+        @include box-sizing(border-box)
+        
+        li
+          text-align: center
+          text-transform: uppercase
+          margin-top: 45px
+          font-size: 1.3rem
+          
+          &::before
+            color: #c42c2a
+            font-size: 2rem
+          
+          h2
+            font-size: 1.45rem
+            border-bottom-width: 0
+            
+            a
+              text-decoration: none
+              color: #2d2d2d
+            
+              &:hover
+                color: #c42c2a
+          
+  &#footer
+    height: 98px
+    background: #312828
+    
+    .social-footer
+      position: absolute
+      left: 50%
+      margin: -75px 0 0 -410px
+      padding: 0
+      list-style: none
+
+      
+      li
+        float: left
+        background: url('../img/headfooter.jpg') repeat 50% 50%
+        width: 150px
+        height: 150px
+        margin: 0 1em
+        border-radius: 150px
+        
+        a
+          display: block
+          color: #fff
+          line-height: 150px
+          width: 150px
+          border-radius: 150px
+          text-align: center
+          font-size: 4em
+          text-decoration: none
+          
+          &:before
+            -webkit-mask-image: url('../img/text-mask.png')
+            -moz-mask-image: url('../img/text-mask.png')
+            mask-image: url('../img/text-mask.png')
+            
+          &:hover
+            &:before
+              color: #c42c2a
+               
+#map-canvas
+  height: 350px        
+  background: transparent url('../img/bg-map.png') repeat-x 50% 100% 
+  overflow: hidden
+  
+  .plane
+    position: absolute
+    z-index: 1
+    top: 10%
+    left: 0
+    width: 106%
+    height: 186px
+    background-image: url('../img/paper-plane.png')
+    margin-left: -3%
+    
+    @include transform(rotate(16deg))
+    
+  
+  .gm-style
+    height: 344px !important
+  
+  .map-point
+    height: 115px
+    width: 109px
+    margin-top: -115px
+    background: transparent url('../img/map-point.png') no-repeat 50% 50%
+    
+.no-touch.cssanimations .plane
+  @include animation(plane 15s infinite linear)
+  
+.header-line
+  height: $line-geight
+  z-index: 1
+  background: url("../img/headlineabout.jpg") repeat 50% 50%
+  position: relative
+  zoom: 1
+  
+  .hex-top,
+  .hex-bottom
+    position: absolute
+    height: 100%
+    @include transform(rotate(-1deg))
+    z-index: -1
+    overflow: hidden
+    background: inherit
+    @include backface-visibility(hidden)
+    width: 300%
+    margin-left: -50%
+    top: 0
+    
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      z-index: -1
+      background: inherit
+      height: 400%
+      width: 100%
+      @include transform(rotate(1deg))
+      @include transform-origin(0 0)
+
+  .hex-bottom
+    @include transform(rotate(1deg))
+         
+    &:before
+      @include transform(rotate(-1deg))
+       
+  .title
+    width: 980px
+    margin: 0 auto
+    
+    line-height: $line-geight
+    color: #fff
+    text-transform: uppercase
+    
+    font-family: 'molot'
+    font-size: 3.8rem
+    
+    -webkit-mask-image: url('../img/text-mask.png')
+    -moz-mask-image: url('../img/text-mask.png')
+    mask-image: url('../img/text-mask.png')
+          
+  &.revert
+    .hex-top,
+    .hex-bottom
+      margin-left: -150%
+    
+    .title
+      text-align: right
+  
+  &.about
+    margin-top: 661px
+  
+  &.work
+    background-image: url("../img/headlinework.jpg")
+  
+      
+  &.strategy
+    background-image: url("../img/headlineservices.jpg")
+    
+  &.contact
+    background-image: url("../img/headlinecontact.jpg")
+
+
+
+@media only screen and (max-width: 1224px)
+  .section
+  
+    &#about .page
+      padding: 2em 1em 3.44em
+      @include box-sizing(border-box)
+      
+    &#grid
+      ul
+        width: 980px
+        
+        li
+          &:nth-child(2),
+          &:nth-child(3)
+            width: 240px
+            
+            .grid-el .hex .hex-container
+              width: 240px
+              
+          &:nth-child(1),
+          &:nth-child(4)
+            width: 230px
+            
+            .grid-el .hex .hex-container
+              width: 230px
+                  
+        li:nth-child(2) .grid-el:first-child .hex .hex-container a
+          margin-top: 20px
+              
+    &#strategy
+      ul.strategy-list
+        width: 980px
+        
+        li
+          margin: 116px 27px 0
+          
+    &#contact
+      .contact-content
+        padding: 0 16px
+        @include box-sizing(border-box)
+        
+        .contact-left
+          width: 608px
+    
+    
+  .header-line 
+    .title
+      padding: 0 .5em
+      @include box-sizing(border-box)
+      
+  
+  
+@media only screen and (max-width: 1023px)
+  .section
+    
+    &#home
+      background: url('../img/illustration-easy.jpg') no-repeat 50% 0 fixed  
+      //background: url('../img/illustration-new.jpg') repeat 50% 50%
+      height: 406px
+    
+      #scene
+        display: none
+        
+    &#about
+      .page
+        width: 100%
+        
+        .me,
+        .box-twitter
+          display: none
+          
+        .why,
+        .what
+          width: 50%
+          @include box-sizing(border-box)
+          
+        .why
+          padding-right: 1.5em
+          
+        .what
+          padding-left: 1.5em
+          
+    &#grid
+      padding-top: 0
+      height: 525px
+      
+      .hex-big
+        height: 520px
+        width: 102%
+        margin-left: -1%
+        
+        .hex-big-container
+          width: 98%
+          margin-left: 1%
+      
+          ul
+            width: 100%
+            
+            li
+              &:nth-child(2),
+              &:nth-child(3),
+              &:nth-child(4)
+                margin-left: 0
+                
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(3),
+              &:nth-child(4)
+                //width: 198px
+                width: 25%
+                
+                .grid-el
+                  width: 100%
+                  
+                  .hex 
+                    //width: 229px
+                    width: 120%
+                    
+                    .hex-container
+                      //width: 202px
+                      width: auto
+                  
+                  
+              .grid-el:nth-child(2)
+                margin-top: -35px
+                
+                .hex
+                  height: 275px
+                  
+            li
+              &:first-child .grid-el:first-child .hex .hex-container a
+                margin-right: 5%
+                  
+              &:nth-child(2) .grid-el:first-child .hex .hex-container
+                margin-left: 13px
+                
+                a
+                  margin-top: 30px
+                  
+              &:nth-child(3) 
+                .grid-el
+                  &:first-child .hex .hex-container a
+                    margin-top: 20px
+                  
+                  &:nth-child(2)
+                    margin-top: -39px
+                  
+              &:nth-child(4) .grid-el:first-child .hex .hex-container
+                margin-left: 13px
+                
+                a
+                  margin-top: 35px                
+                
+    &#strategy
+      height: 600px
+      
+      .strategy-content
+        //background-size: contain
+        background-size: 85%
+        
+        ul.strategy-list
+          //width: 100%
+          width: 768px
+          
+          li
+            width: 202px
+            background-size: contain
+            padding-top: 240px
+            margin: 72px 21px 0
+            width: 214px
+    
+    &#contact
+      .contact-content
+        width: 100%
+        background-size: 70%
+        
+        .contact-left
+          width: 70%
+        
+        .contact-right
+          width: 30%
+          padding-left: 3%
+          
+          li
+            h2
+              font-size: 1.3rem
+
+  .header-line
+    .title
+      width: 100%
+    
+    &.about
+      margin-top: 419px
+  
+@media only screen and (max-width : 767px)
+  .section
+    &#home
+      display: none
+    
+    &#about
+      .page
+        .why
+          float: none
+          width: 100%
+          padding: 0
+        
+        .what
+          float: none
+          width: 100%
+          padding: 0
+          margin-top: 2em
+          
+    &#grid
+      height: 100%
+      
+      .hex-big
+        width: 100%
+        margin-left: 0
+        height: auto
+        @include transform(rotate(0deg))
+        
+        .hex-big-container
+          width: 100%
+          margin-left: 0
+          @include transform(rotate(0deg))
+      
+          ul
+            width: 100%
+            
+            li
+              &:nth-child(1),
+              &:nth-child(2),
+              &:nth-child(3),
+              &:nth-child(4)
+                float: none
+                width: 100%
+                @include transform(rotate(0deg))
+                  
+                
+                .grid-el
+                  width: 100%
+                  
+                  .hex 
+                    width: 100%
+                    height: 100%
+                    margin: 0
+                    @include transform(rotate(0deg))
+                    
+                    .hex-container
+                      margin: 0
+                      @include transform(rotate(0deg))
+                      
+              .grid-el:nth-child(2)
+                margin-top: 0
+                  
+            li
+              &:first-child .grid-el:first-child .hex .hex-container a
+                margin-right: 0
+                  
+              &:nth-child(2) .grid-el:first-child .hex .hex-container
+                margin-left: 0
+                
+                a
+                  margin-top: 0
+                  
+              &:nth-child(3) .grid-el:first-child .hex .hex-container a
+                margin-top: 0
+                  
+              &:nth-child(4) .grid-el:first-child .hex .hex-container
+                margin-left: 0
+                
+                a
+                  margin-top: 0
+                                  
+    &#strategy
+      height: 100%
+    
+      .strategy-content
+        background: none
+      
+        ul.strategy-list
+          width: 100%
+          padding: 2em 0
+          
+          li
+            float: none
+            width: 90%
+            margin: 0 5%
+            padding: 105% 0 0
+            margin-bottom: 20px
+
+          
+    &#contact
+      padding-bottom: 0
+      
+      .contact-content
+        background: none
+        
+        .contact-left,
+        .contact-right
+          float: none
+          width: 100%
+          margin: 0
+          
+        .contact-right
+          padding: 0
+          
+    &#footer
+      height: auto
+      
+      .social-footer
+        text-align: center
+        position: relative
+        left: 0
+        margin: 1em 0
+        
+        li
+          float: none
+          margin: .5em auto
+        
+          
+    
+  .header-line
+    .title
+      white-space: nowrap
+      font-size: 3rem
+      
+      &#work-link
+        font-size: 2.5rem
+      
+      &#contact-link
+        font-size: 2rem
+    
+    &.about
+      margin-top: 0
+      
+   
+@include keyframes(tada)
+  0% 
+    @include transform(scale(1))
+  10%, 20% 
+    @include transform(scale(0.9) rotate(-3deg))
+  30%, 50%, 70%, 90%
+    @include transform(scale(1.1) rotate(3deg))
+  40%, 60%, 80%
+    @include transform(scale(1.1) rotate(-3deg))
+  100%
+    @include transform(scale(1) rotate(0))
+      
+
+@include keyframes(bounceInUp)
+  0%
+    @include transform(translateY(2000px))
+  60%
+    @include transform(translateY(-30px))
+  80%
+    @include transform(translateY(10px))
+  100%
+    @include transform(translateY(0))
+
+@include keyframes(plane)
+  0%
+    background-position: 0 0
+  100%
+    background-position: -2053px 0
+    
+@include keyframes(illustration-one)
+  0%
+    @include transform(translate3d(5%,0,0) rotateZ(10deg))
+  100%
+    @include transform(translate3d(-5%,0,0) rotateZ(-10deg))    
+    
+@include keyframes(illustration-two)
+  0%
+    @include transform(rotateZ(0deg) translate3d(0,10%,0) rotateZ(0deg))  
+
+  100% 
+    @include transform(rotateZ(360deg) translate3d(0,10%,0) rotateZ(-360deg))
+    
+@include keyframes(illustration-three)
+  0%
+    @include transform(rotateZ(0deg) translate3d(0,2%,0) rotateZ(0deg))  
+
+  100% 
+    @include transform(rotateZ(360deg) translate3d(0,2%,0) rotateZ(-360deg))
+
+@include keyframes(wave)
+  0% 
+    @include transform(rotateX(-30deg))
+  25% 
+    @include transform(rotateX(30deg))
+  50%
+    @include transform(rotateY(-30deg))
+  75%
+    @include transform(rotateY(30deg))
+  100%
+    @include transform(rotateZ(20deg))
+
+@include keyframes(wave-easy)
+  0% 
+    @include transform(rotateX(-15deg))
+  25% 
+    @include transform(rotateX(15deg))
+  50%
+    @include transform(rotateY(-15deg))
+  75%
+    @include transform(rotateY(15deg))
+  100%
+    @include transform(rotateZ(0deg))
+
+
+/*
+ * Project
+ */
+ 
+#portfolio-window
+  text-align: center
+  background: #eedfc8
+  bottom: 0
+  visibility: hidden
+  height: 100%
+  left: 100%
+  overflow-x: hidden
+  overflow-y: scroll
+  padding: 0
+  right: 0
+  position: fixed
+  margin: 0
+  width: 100%
+  z-index: 200
+  box-sizing: content-box
+  
+  @include transition(all 1s ease)   
+  
+  &.animate
+    @include transition(all 1s ease)
+    
+  &.open
+    left: 0
+    visibility: visible
+    
+  &.loaded 
+    .close
+      visibility: visible
+  
+  .close 
+    float: right
+    font-weight: 700
+    line-height: 18px
+    position: fixed
+    right: 20px
+    top: 20px
+    z-index: 210
+    padding: 30px
+    visibility: hidden
+    font-size: 40px
+    text-decoration: none
+    color: #fc0
+    opacity: .5
+    
+    @include transition(all .3s ease)
+    
+    &:hover
+      @include transform(rotate(-90deg))
+      opacity: .1
+    
+    &:before,
+    &:after
+      content: ''
+      display: block
+      width: 70px
+      height: 4px
+      border-radius: 1px
+      background: #000
+      position: absolute
+      top: 28px
+      left: -5px
+      @include transition(.25s)
+      @include transform(rotate(45deg))
+      
+    &:before,
+    &:after
+      @include transform(rotate(-360deg))
+  
+  &.loaded
+    .close
+      &:before 
+        @include transform(rotate(-45deg))
+      &:after 
+        @include transform(rotate(45deg))
+
+  .work-one
+    background: url('../img/bg-project.png')
+    padding: 100px 0 20px
+    min-height: 100%
+    @include box-sizing(border-box)
+    
+    .project
+      position: relative
+      width: 1120px
+      margin: 0 auto
+      
+      .omega
+        float: right
+        width: 26%
+        margin-left: 2%
+        
+        h2
+          text-align: center
+          font-family: "pf_din_text_cond_probold"
+          font-size: 2.25rem
+          border-bottom: 1px dashed #9f9e96
+          color: #2d2d2d
+          line-height: 1.23em
+          letter-spacing: -1px
+          -webkit-mask-image: url("../img/text-mask.png")
+          -moz-mask-image: url("../img/text-mask.png")
+          mask-image: url("../img/text-mask.png")
+          
+        p
+          margin-top: 0.75em
+          line-height: 1.3em
+          
+          a.next-to-visit
+            position: relative
+            display: inline-block
+            margin: 2em 25px 0
+            outline: none
+            text-decoration: none
+            letter-spacing: 1px
+            font-weight: 400
+            text-shadow: 0 0 1px rgba(255,255,255,0.3)
+            font-size: 1.35em
+            padding: 0 5px
+            color: #1f1f1f
+            z-index: 1
+            @include transition(color 0.3s)
+            
+            &::before,
+            &::after
+              position: absolute
+              width: 100%
+              left: 0
+              top: 50%
+              height: 3px
+              margin-top: -1px
+              background: #000
+              opacity: .5
+              content: ''
+              z-index: -1
+              pointer-events: none
+
+              -webkit-transition: -webkit-transform 0.3s, opacity 0.3s
+              -moz-transition: -moz-transform 0.3s, opacity 0.3s
+              transition: transform 0.3s, opacity 0.3s
+            
+            &::before
+              @include transform(translateY(-20px))
+            
+            &::after
+              @include transform(translateY(20px))
+              
+            &:hover::before,
+            &:focus::before
+              @include transform(rotate(45deg))
+              
+            &:hover::after,
+            &:focus::after
+              @include transform(rotate(-45deg))
+              
+        
+      .alpha
+        position: relative
+        width: 70%
+        margin-right: 2%
+        
+        .imac
+          width: 100%
+          @include backface-visibility(hidden)
+          
+        .project-slider
+          position: absolute
+          margin: 0
+          padding: 0
+          list-style: none
+          top: 5.1%
+          left: 3.9%
+          right: 3.9%
+          bottom: 26.2%
+          height: auto
+          width: auto
+          overflow: hidden
+          
+          li
+            position: absolute !important
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            width: auto
+            height: auto
+            overflow: hidden
+            @include backface-visibility(hidden)
+            
+            img,
+            .video-container
+              display: block
+              max-width: 100%
+              height: auto
+              width: 100%
+              
+            .video-container
+              position: relative
+              overflow: hidden
+              
+              float: none
+              clear: both
+              width: 100%
+              position: relative
+              padding-bottom: 53.25%
+              padding-top: 25px
+              height: 0
+              
+              iframe,
+              object,
+              embed
+                position: absolute
+                top: 0
+                left: 0
+                width: 100%
+                height: 100%
+         
+         
+@media screen and (max-width: 1224px)
+  #portfolio-window .work-one .project
+    width: 940px
+    
+    .omega p a.next-to-visit
+      line-height: 17px
+
+@media screen and (max-width: 1024px)
+  #portfolio-window
+    .work-one
+      .project
+        width: 100%
+      
+        .omega
+          float: none
+          width: 100%
+          margin: 0
+          padding: 0 2em
+          @include box-sizing(border-box)
+        
+        .alpha
+          float: none
+          width: 90%
+          margin: 80px auto 0
+
+/* 
+ * Menu
+ */
+ 
+      
+.component,      
+.component *
+  @include box-sizing(border-box)
+  margin: 0
+  padding: 0
+  list-style: none
+  position: relative
+  
+      
+      
+.csstransforms
+  .cn-wrapper
+    font-size: 1em
+    width: 26em
+    height: 26em
+    overflow: hidden
+    position: fixed
+    z-index: 10
+    top: -13em
+    left: 50%
+    border-radius: 50%
+    margin-left: -13em
+    @include transform(scale(0.1))
+    
+    pointer-events: none
+    -webkit-transition: all .3s ease
+    -moz-transition: all .3s ease
+    transition: all .3s ease
+  .opened-nav
+    border-radius: 50%
+    pointer-events: auto
+    @include transform(scale(1) rotate(180deg))
+
+.cn-overlay
+  width: 100%
+  height: 100%
+  background-color: rgba(0, 0, 0, 0.6)
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  opacity: 0
+  visibility: hidden
+  -webkit-transition: all .3s ease
+  -moz-transition: all .3s ease
+  transition: all .3s ease
+  z-index: 2
+  &.on-overlay
+    visibility: visible
+    opacity: 1
+
+.cn-button
+  border: none
+  background: none
+  color: #f06060
+  text-align: center
+  font-size: 1.8em
+  padding-top: 1em
+  background-color: #fff
+  position: fixed
+  left: 50%
+  border-radius: 50%
+  cursor: pointer
+  z-index: 11
+  outline: none
+  background: #fff url('../img/bg-form.png') repeat 50% 50%
+  
+  height: 3.5em
+  width: 3.5em
+  margin-left: -1.75em
+  top: -1.75em
+  
+  &:hover, &:active, &:focus
+    color: #aa1010
+  
+
+  &.active
+    border: .5em solid #edddc6
+    width: 4.5em
+    height: 4.5em
+    margin-left: -2.25em
+    top: -2.25em
+    
+    &:before
+      margin-top: 14px
+
+      
+  .cross
+    @include transition(all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1))
+    
+    @include transform(rotateZ(45deg))
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-top: 1.25rem
+    @include animation(none)
+    
+    
+    .x, 
+    .y
+      @include transition(all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1))
+      
+      @include border-top-radius(2px)
+      background-clip: padding-box
+      background-color: #a63334
+      height: 4px
+      width: 4px
+      margin: -2px
+      position: absolute
+      left: 0
+      top: 0
+      
+      -webkit-mask-image: url('../img/text-mask.png')
+      -moz-mask-image: url('../img/text-mask.png')
+      mask-image: url('../img/text-mask.png')
+      
+    .x
+      margin-left: -12px
+      margin-top: -2px
+      width: 24px
+    
+    .y
+      margin-top: -12px
+      height: 24px
+  
+  &.close
+    .cross
+      @include transform(rotateZ(0deg))
+      @include animation(scrolljump 1s infinite)
+      @include transition(all .3s ease)
+      
+      .x
+        margin-left: -2px
+        width: 4px
+        margin-top: -12px
+      
+      .y
+        margin-top: -4px
+        height: 16px
+
+    
+
+.csstransforms .cn-wrapper li
+  position: absolute
+  font-size: 1.5em
+  width: 10em
+  height: 10em
+  -webkit-transform-origin: 100% 100%
+  -moz-transform-origin: 100% 100%
+  -ms-transform-origin: 100% 100%
+  transform-origin: 100% 100%
+  overflow: hidden
+  left: 50%
+  top: 50%
+  margin-top: -1.3em
+  margin-left: -10em
+  -webkit-transition: border .3s ease
+  -moz-transition: border .3s ease
+  transition: border .3s ease
+  
+  @include backface-visibility(hidden)
+  
+  border-right: 2px solid transparent
+  border-bottom: 1px solid transparent
+  
+  a
+    display: block
+    font-size: 1.18em
+    height: 14.5em
+    width: 14.5em
+    position: absolute
+    bottom: -7.25em
+    right: -7.25em
+    border-radius: 50%
+    text-decoration: none
+    color: #fff
+    padding-top: 1.8em
+    text-align: center
+    @include transform(skew(-45deg) rotate(-70deg) scale(1))
+    @include transition(opacity 0.3s, color 0.3s)
+    background: url('../img/bg-menu.png')
+  
+      
+    &:before
+      @include transform(rotate(180deg))
+      font-size: 2.3rem
+    
+  &:first-child
+    @include transform(rotate(0deg) skew(45deg))
+    
+  &:nth-child(2)
+    @include transform(rotate(45deg) skew(45deg))
+    
+  &:nth-child(3)
+    @include transform(rotate(90deg) skew(45deg))
+    
+  &:nth-child(4)
+    @include transform(rotate(135deg) skew(45deg))
+    
+    
+    
+  &:nth-child(odd) a
+    //background-color: #a11313
+    //background-color: hsla(0, 88%, 63%, 1)
+    
+  &:nth-child(even) a
+    //background-color: #a61414
+    //background-color: hsla(0, 88%, 65%, 1)
+    
+  &.active a
+    //background-color: #b31515
+    //background-color: hsla(0, 88%, 70%, 1)
+    opacity: .8
+    
+  &:not(.active) a
+    &:hover, &:active, &:focus
+      //background-color: #b31515
+      //background-color: hsla(0, 88%, 70%, 1)
+      
+      &:before
+        opacity: .5
+      
+
+
+.no-csstransforms
+  .cn-button
+    display: none
+    
+    
+  .cn-wrapper
+    li
+      position: static
+      float: left
+      font-size: 1em
+      height: 5em
+      width: 5em
+      background-color: #eee
+      text-align: center
+      line-height: 5em
+      a
+        display: block
+        width: 100%
+        height: 100%
+        text-decoration: none
+        color: inherit
+        font-size: 1.3em
+        border-right: 1px solid #ddd
+        &:last-child
+          border: none
+        &:hover, &:active, &:focus
+          background-color: white
+          
+      &.active a
+        background-color: #6F325C
+        color: #fff
+      
+    font-size: 1em
+    height: 5em
+    width: 25.15em
+    bottom: 0
+    margin-left: -12.5em
+    overflow: hidden
+    position: fixed
+    z-index: 10
+    left: 50%
+    border: 1px solid #ddd
+
+@media screen and (max-width: 480px)
+  .csstransforms .cn-wrapper
+    font-size: .68em
+  .cn-button
+    font-size: 1em
+    
+    &.close
+      .cross
+        @include animation(none)
+        margin-top: 13px
+        font-size: 77%
+        
+    .cross
+      margin-top: 13px
+      
+  .csstransforms .cn-wrapper li
+    font-size: 1.52em
+
+@media screen and (max-width: 320px)
+  .no-csstransforms .cn-wrapper
+    width: 15.15px
+    margin-left: -7.5em
+    li
+      height: 3em
+      width: 3em
+
+/*
+ * Cbr Scroller 
+ */
+
+.cbp-so-scroller
+  margin-top: 2.5em
+  overflow: hidden
+
+.cbp-so-section
+  position: relative
+
+/* Sides */
+
+.cbp-so-side
+  &:before
+    content: " "
+    display: table
+  &:after
+    content: " "
+    display: table
+    clear: both
+
+/* Clear floats of children */
+
+.cbp-so-side-right
+  text-align: left
+
+.cbp-so-side-left
+  text-align: right
+
+.cbp-so-side-right img
+  float: left
+
+.cbp-so-side-left img
+  float: right
+
+/* Initial state (hidden or anything else) */
+
+.cbp-so-init
+  .cbp-so-side
+    opacity: 0
+    -webkit-transition: none
+    -moz-transition: none
+    transition: none
+  .cbp-so-side-left
+    -webkit-transform: translateX(-80px)
+    -moz-transform: translateX(-80px)
+    transform: translateX(-80px)
+  .cbp-so-side-right
+    -webkit-transform: translateX(80px)
+    -moz-transform: translateX(80px)
+    transform: translateX(80px)
+
+/* Animated state
+/* add you final states (transition) or your effects (animations) for each side */
+
+.cbp-so-section.cbp-so-animate
+  .cbp-so-side-left
+    -webkit-transition: -webkit-transform 1.5s, opacity 0.5s
+    -moz-transition: -moz-transform 1.5s, opacity 0.5s
+    transition: transform 1.5s, opacity 0.5s
+    -webkit-transform: translateX(0px)
+    -moz-transform: translateX(0px)
+    transform: translateX(0px)
+    opacity: 1
+  .cbp-so-side-right
+    -webkit-transition: -webkit-transform 1.5s, opacity 0.5s
+    -moz-transition: -moz-transform 1.5s, opacity 0.5s
+    transition: transform 1.5s, opacity 0.5s
+    -webkit-transform: translateX(0px)
+    -moz-transform: translateX(0px)
+    transform: translateX(0px)
+    opacity: 1
+    -webkit-transition-delay: 0.2s
+    -moz-transition-delay: 0.2s
+    transition-delay: 0.2s
+  .cbp-so-side-left
+    -webkit-transition-delay: 0.2s
+    -moz-transition-delay: 0.2s
+    transition-delay: 0.2s
+
+/* Animations */
+
+.do-load
+  &.cbp-so-animate > div
+    opacity: 1
+    filter: alpha(opacity = 100)
+    transition: all 0.2s
+    -moz-transition: all 0.2s
+    -webkit-transition: all 0.2s
+    -o-transition: all 0.2s
+  &:not(.cbp-so-animate) > div
+    opacity: 0
+    filter: alpha(opacity = 0)
+
+/* Animation Effects
+ * 1. anim-fade - FADE IN
+ * 2. anim-flytop - FLY FROM TOP (CSS 3D)
+ * 3. anim-flybottom - FLY FROM BOTTOM (CSS 3D)
+ * 4. anim-cardflip - CARD FLIP (CSS 3D)
+ * 5. anim-helix - HELIX (CSS 3D)
+ * 6. anim-tilt - TILT FROM TOP
+ * 7. anim-twirl - TWIRL (CSS 3D)
+ * 8. anim-wave - WAVE FROM LEFT
+ * 9. anim-curl - CURL (CSS 3D)
+ * 10. anim-grow - GROW
+ * 11. anim-zipper - ZIPPER
+
+/* FLY FROM TOP (CSS 3D) */
+
+.cbp-so-animate.anim-flytop
+  -webkit-perspective: 300px
+  -moz-perspective: 300px
+  -ms-perspective: 300px
+  -o-perspective: 300px
+  perspective: 300px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease
+    -o-transition: all 2000ms ease
+    transition: all 2000ms ease
+    -webkit-transform-origin: 100% 50%
+    -moz-transform-origin: 100% 50%
+    -ms-transform-origin: 100% 50%
+    -o-transform-origin: 100% 50%
+    transform-origin: 100% 50%
+
+.do-load.anim-flytop:not(.cbp-so-animate) > div
+  -webkit-transform: translate3d(0, -100px, -100px) rotateX(90deg)
+  -moz-transform: translate3d(0, -100px, -100px) rotateX(90deg)
+  -ms-transform: translate3d(0, -100px, -100px) rotateX(90deg)
+  -o-transform: translate3d(0, -100px, -100px) rotateX(90deg)
+  transform: translate3d(0, -100px, -100px) rotateX(90deg)
+
+/* FLY FROM BOTTOM (CSS 3D) */
+
+.cbp-so-animate.anim-flybottom
+  -webkit-perspective: 300px
+  -moz-perspective: 300px
+  -ms-perspective: 300px
+  -o-perspective: 300px
+  perspective: 300px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease
+    -o-transition: all 2000ms ease
+    transition: all 2000ms ease
+    -webkit-transform-origin: 100% 50%
+    -moz-transform-origin: 100% 50%
+    -ms-transform-origin: 100% 50%
+    -o-transform-origin: 100% 50%
+    transform-origin: 100% 50%
+
+.do-load.anim-flybottom:not(.cbp-so-animate) > div
+  -webkit-transform: translate3d(0, 100px, -100px) rotateX(-90deg)
+  -moz-transform: translate3d(0, 100px, -100px) rotateX(-90deg)
+  -ms-transform: translate3d(0, 100px, -100px) rotateX(-90deg)
+  -o-transform: translate3d(0, 100px, -100px) rotateX(-90deg)
+  transform: translate3d(0, 100px, -100px) rotateX(-90deg)
+
+/* CARD FLIP (CSS 3D) */
+
+.cbp-so-animate.anim-cardflip
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease, opacity 300ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease, opacity 300ms ease
+    -o-transition: all 2000ms ease, opacity 300ms ease
+    transition: all 2000ms ease, opacity 300ms ease
+    -webkit-transform-origin: 0% 0%
+    -moz-transform-origin: 0% 0%
+    -ms-transform-origin: 0% 0%
+    -o-transform-origin: 0% 0%
+    transform-origin: 0% 0%
+
+.do-load.anim-cardflip:not(.cbp-so-animate) > div
+  -webkit-transform: rotateX(-80deg)
+  -moz-transform: rotateX(-80deg)
+  -ms-transform: rotateX(-80deg)
+  -o-transform: rotateX(-80deg)
+  transform: rotateX(-80deg)
+  -webkit-transform-origin: 0% 0%
+  -moz-transform-origin: 0% 0%
+  -ms-transform-origin: 0% 0%
+  -o-transform-origin: 0% 0%
+  transform-origin: 0% 0%
+
+/* HELIX (CSS 3D) */
+
+.cbp-so-animate.anim-helix
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease, opacity 200ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease, opacity 200ms ease
+    -o-transition: all 2000ms ease, opacity 200ms ease
+    transition: all 2000ms ease, opacity 200ms ease
+    -webkit-transform-origin: 50% 50%
+    -moz-transform-origin: 50% 50%
+    -ms-transform-origin: 50% 50%
+    -o-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+
+.do-load.anim-helix:not(.cbp-so-animate) > div
+  -webkit-transform: rotateY(-180deg)
+  -moz-transform: rotateY(-180deg)
+  -ms-transform: rotateY(-180deg)
+  -o-transform: rotateY(-180deg)
+  transform: rotateY(-180deg)
+
+/* TILT FROM TOP */
+
+.cbp-so-animate.anim-tilt
+  -webkit-perspective: 800px
+  -moz-perspective: 800px
+  -ms-perspective: 800px
+  -o-perspective: 800px
+  perspective: 800px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease
+    -moz-transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+    -ms-transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease
+    -o-transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease
+    transition: all 1000ms cubic-bezier(0.26, 0.86, 0.44, 0.985), opacity 300ms ease
+
+.do-load.anim-tilt:not(.cbp-so-animate) > div
+  -webkit-transform: translateY(-100%) translateZ(-200px)
+  -moz-transform: translateY(-100%) translateZ(-200px)
+  -ms-transform: translateY(-100%) translateZ(-200px)
+  -o-transform: translateY(-100%) translateZ(-200px)
+  transform: translateY(-100%) translateZ(-200px)
+
+/* TWIRL (CSS 3D) */
+
+.cbp-so-animate.anim-twirl
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  -webkit-perspective-origin: 50% 50%
+  -moz-perspective-origin: 50% 50%
+  -ms-perspective-origin: 50% 50%
+  -o-perspective-origin: 50% 50%
+  perspective-origin: 50% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease, opacity 200ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease, opacity 200ms ease
+    -o-transition: all 2000ms ease, opacity 200ms ease
+    transition: all 2000ms ease, opacity 200ms ease
+    -webkit-transform-origin: 50% 50%
+    -moz-transform-origin: 50% 50%
+    -ms-transform-origin: 50% 50%
+    -o-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+
+.do-load.anim-twirl:not(.cbp-so-animate) > div
+  -webkit-transform: rotate3d(80, 70, 10, -180deg)
+  -moz-transform: rotate3d(80, 70, 10, -180deg)
+  -ms-transform: rotate3d(80, 70, 10, -180deg)
+  -o-transform: rotate3d(80, 70, 10, -180deg)
+  transform: rotate3d(80, 70, 10, -180deg)
+
+/* WAVE FROM LEFT */
+
+.cbp-so-animate.anim-wave
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+    -moz-transition: all 2000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+    -ms-transition: all 2000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+    -o-transition: all 2000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+    transition: all 2000ms cubic-bezier(0.26, 0.86, 0.44, 0.985)
+
+.do-load.anim-wave:not(.cbp-so-animate) > div
+  -webkit-transform: translateX(-70%)
+  -moz-transform: translateX(-70%)
+  -ms-transform: translateX(-70%)
+  -o-transform: translateX(-70%)
+  transform: translateX(-70%)
+
+/* CURL (CSS 3D) */
+
+.cbp-so-animate.anim-curl
+  -webkit-perspective: 600px
+  -moz-perspective: 600px
+  -ms-perspective: 600px
+  -o-perspective: 600px
+  perspective: 600px
+  -webkit-perspective-origin: 0% 50%
+  -moz-perspective-origin: 0% 50%
+  -ms-perspective-origin: 0% 50%
+  -o-perspective-origin: 0% 50%
+  perspective-origin: 0% 50%
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease, opacity 200ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease, opacity 200ms ease
+    -o-transition: all 2000ms ease, opacity 200ms ease
+    transition: all 2000ms ease, opacity 200ms ease
+    -webkit-transform-origin: 0% 0%
+    -moz-transform-origin: 0% 0%
+    -ms-transform-origin: 0% 0%
+    -o-transform-origin: 0% 0%
+    transform-origin: 0% 0%
+    -webkit-backface-visibility: hidden
+    -moz-backface-visibility: hidden
+    -ms-backface-visibility: hidden
+    -o-backface-visibility: hidden
+    backface-visibility: hidden
+
+.do-load.anim-curl:not(.cbp-so-animate) > div
+  -webkit-transform: rotateY(90deg)
+  -moz-transform: rotateY(90deg)
+  -ms-transform: rotateY(90deg)
+  -o-transform: rotateY(90deg)
+  transform: rotateY(90deg)
+  -webkit-transform-origin: 0% 0%
+  -moz-transform-origin: 0% 0%
+  -ms-transform-origin: 0% 0%
+  -o-transform-origin: 0% 0%
+  transform-origin: 0% 0%
+  -webkit-backface-visibility: hidden
+  -moz-backface-visibility: hidden
+  -ms-backface-visibility: hidden
+  -o-backface-visibility: hidden
+  backface-visibility: hidden
+
+/* GROW */
+
+.cbp-so-animate.anim-grow
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  > .target-grow
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 2000ms ease
+    -moz-transition: all 2000ms ease
+    -ms-transition: all 2000ms ease
+    -o-transition: all 2000ms ease
+    transition: all 2000ms ease
+    -webkit-transform-origin: 50% 50%
+    -moz-transform-origin: 50% 50%
+    -ms-transform-origin: 50% 50%
+    -o-transform-origin: 50% 50%
+    transform-origin: 50% 50%
+
+.do-load.anim-grow:not(.cbp-so-animate) > .target-grow
+  -webkit-transform: scale(0.01)
+  -moz-transform: scale(0.01)
+  -ms-transform: scale(0.01)
+  -o-transform: scale(0.01)
+  transform: scale(0.01)
+  -webkit-transform-origin: 50% 50%
+  -moz-transform-origin: 50% 50%
+  -ms-transform-origin: 50% 50%
+  -o-transform-origin: 50% 50%
+  transform-origin: 50% 50%
+
+/* ZIPPER */
+
+.cbp-so-animate.anim-zipper
+  -webkit-perspective: 400px
+  -moz-perspective: 400px
+  -ms-perspective: 400px
+  -o-perspective: 400px
+  perspective: 400px
+  > div
+    -webkit-transform: translateZ(0px)
+    -moz-transform: translateZ(0px)
+    -ms-transform: translateZ(0px)
+    -o-transform: translateZ(0px)
+    transform: translateZ(0px)
+    -webkit-transition: all 1000ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    -moz-transition: all 1000ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    -ms-transition: all 1000ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    -o-transition: all 1000ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    transition: all 1000ms cubic-bezier(0.39, 0.575, 0.565, 1)
+    -webkit-transform-origin: 50% 0%
+    -moz-transform-origin: 50% 0%
+    -ms-transform-origin: 50% 0%
+    -o-transform-origin: 50% 0%
+    transform-origin: 50% 0%
+
+.do-load.anim-zipper:not(.cbp-so-animate) > div
+  &:nth-child(odd)
+    -webkit-transform: translateX(80%)
+    -moz-transform: translateX(80%)
+    -ms-transform: translateX(80%)
+    -o-transform: translateX(80%)
+    transform: translateX(80%)
+  -webkit-transform: translateX(-80%)
+  -moz-transform: translateX(-80%)
+  -ms-transform: translateX(-80%)
+  -o-transform: translateX(-80%)
+  transform: translateX(80%)
+  -webkit-transform-origin: 50% 0%
+  -moz-transform-origin: 50% 0%
+  -ms-transform-origin: 50% 0%
+  -o-transform-origin: 50% 0%
+  transform-origin: 50% 0%
+
+/*
+ * Preloader
+ */
+ 
+#preloader 
+  position: fixed
+  top: 0
+  left: 0
+  right: 0
+  bottom: 0
+  background-color: rgba(238, 223, 200, 1)
+  z-index: 9999
+  
+  #page-loader
+    position: fixed
+    top: 50%
+    left: 50%
+    z-index: 1
+    margin: -24px 0 0 -24px
+    padding: 0px
+    
+    ul.be-loader 
+      font-size: 50px
+      width: 48px
+      height: 48px
+      position: relative
+      border-radius: 50%
+      list-style: none
+      padding: 0px
+      margin: 0px
+      
+      li
+        position: absolute
+        width: .2em
+        height: .2em
+        border-radius: 50%
+        
+        &:nth-child(1)
+          left: 50%
+          top: 0
+          margin: 0 0 0 -0.1em
+          background: #00C176
+          -webkit-transform-origin: 50% 250%
+          -moz-transform-origin: 50% 250%
+          -ms-transform-origin: 50% 250%
+          -o-transform-origin: 50% 250%
+          transform-origin: 50% 250%
+          -webkit-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate
+          -moz-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate
+          -ms-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate
+          -o-animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate
+          animation: rota 1.13s linear infinite, opa 3.67s ease-in-out infinite alternate
+          
+        &:nth-child(2)
+          top: 50%
+          right: 0
+          margin: -0.1em 0 0 0
+          background: #000
+          -webkit-transform-origin: -150% 50%
+          -moz-transform-origin: -150% 50%
+          -ms-transform-origin: -150% 50%
+          -o-transform-origin: -150% 50%
+          transform-origin: -150% 50%
+          -webkit-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate
+          -moz-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate
+          -ms-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate
+          -o-animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate
+          animation: rota 1.86s linear infinite, opa 4.29s ease-in-out infinite alternate
+          
+        &:nth-child(3)
+          left: 50%
+          bottom: 0
+          margin: 0 0 0 -0.1em
+          background: #FABE28
+          -webkit-transform-origin: 50% -150%
+          -moz-transform-origin: 50% -150%
+          -ms-transform-origin: 50% -150%
+          -o-transform-origin: 50% -150%
+          transform-origin: 50% -150%
+          -webkit-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate
+          -moz-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate
+          -ms-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate
+          -o-animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate
+          animation: rota 1.45s linear infinite, opa 5.12s ease-in-out infinite alternate
+          
+        &:nth-child(4)
+          top: 50%
+          left: 0
+          margin: -0.1em 0 0 0
+          background: #0BA0DA
+          -webkit-transform-origin: 250% 50%
+          -moz-transform-origin: 250% 50%
+          -ms-transform-origin: 250% 50%
+          -o-transform-origin: 250% 50%
+          transform-origin: 250% 50%
+          -webkit-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate
+          -moz-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate
+          -ms-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate
+          -o-animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate
+          animation: rota 1.72s linear infinite, opa 5.25s ease-in-out infinite alternate
+
+
+@include keyframes(rota)
+  to 
+    @include transform(rotate(360deg))
+
+
+@include keyframes(opa)
+  12.0%
+    opacity: 0.80
+  19.5%
+    opacity: 0.88
+  37.2%
+    opacity: 0.54
+  40.5%
+    opacity: 0.32
+  52.7%
+    opacity: 0.69
+  60.2%
+    opacity: 0.60
+  66.6%
+    opacity: 0.22
+  70.0%
+    opacity: 0.63
+  79.9%
+    opacity: 0.60
+  84.2%
+    opacity: 0.75
+  91.0%
+    opacity: 0.87
+
+
+  
+      
+/*
+ * scroll to Top
+ */
+      
+#scrollUp
+  bottom: 20px
+  right: 20px
+  text-decoration: none
+  background: rgba(0, 0, 0, 0.3)
+  color: #f7f7f7
+  border-radius: 3px
+  @include transition(background 200ms linear)
+  @include backface-visibility(hidden)
+  line-height: 1
+  font-size: 20px
+  padding: 9px 10px 10px 10px
+  
+  &:hover
+    opacity: .5
+      
+/*
+ * qeuw
+ */
+      
+.icon-q
+  position: fixed
+  z-index: 1001
+  top: 40px
+  right: 0
+  text-decoration: none
+  background: rgba(0, 0, 0, 0.3)
+  color: #f7f7f7
+  border-top-left-radius: 3px
+  border-bottom-left-radius: 3px
+  @include transition(background 200ms linear)
+  @include backface-visibility(hidden)
+  line-height: 1
+  font-size: 20px
+  padding: 10px 8px 9px 8px
+  
+  &:hover
+    opacity: .5
+      
+/*
+ * Animation
+ */
+ 
+@include keyframes(scrolljump)
+  0% 
+    margin-top: 20px
+  50% 
+    margin-top: 25px
+  100%
+    margin-top: 20px

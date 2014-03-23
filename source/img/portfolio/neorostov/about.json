@@ -1,0 +1,20 @@
+﻿{
+    "name": "NeoRostov",
+    "fullName": "Интернет-магазин необычных вещей — NeoRostov",
+    "desc": "Разработан чистый и аккуратный дизайн. Благодаря адаптивности сайт одинаково хорошо отбражается как на больших мониторах, так и на мобильных устройствах.",
+    "url": "http://neorostov.ru/",
+    "items": [
+        {
+            "img": "true",
+            "src": "portfolio/neorostov/slide-1.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/neorostov/slide-2.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/neorostov/slide-3.jpg"
+        }
+    ]
+}

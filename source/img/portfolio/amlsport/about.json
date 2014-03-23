@@ -1,0 +1,16 @@
+﻿{
+    "name": "amlSport",
+    "fullName": "Блог о спорте, здоровье и туризме – 42re",
+    "desc": "Создание красивого и удобного информационного портала для любителей спорта и здорового образа жизни.",
+    "url": "http://amlsport.ru/",
+    "items": [
+        {
+            "img": "true",
+            "src": "portfolio/amlsport/slide-1.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/amlsport/slide-2.jpg"
+        }
+    ]
+}

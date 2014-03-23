@@ -1,0 +1,28 @@
+﻿{
+    "name": "DI Gallery",
+    "fullName": "Экспериментальный проект, зиждущийся на технологиях html5 и css3 – DI Gallery",
+    "desc": "«Кажется, что стоит отодвинуть монитор, и этот куб будет жить своей жизнью прямо в трёхмерном пространстве» // designfire.ru <br /><br />«Минусы тоже есть! Показал галерею своим друзьям — так вместо разглядывания моих работ (и восхваления автора!;)), они занялись самой галереей, играя её мобильными блоками!» // Bogdan Mylove <br /><br />«DI Gallery – эффектная и компактная, как коробок спичек. Всё гениальное — просто!» // getincss.ru",
+    "url": "http://photo.voodee.ru/",
+    "items": [
+        {
+            "img": "true",
+            "src": "portfolio/di-gallery/slide-1.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/di-gallery/slide-2.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/di-gallery/slide-3.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/di-gallery/slide-4.jpg"
+        },
+        {
+            "img": "true",
+            "src": "portfolio/di-gallery/slide-5.jpg"
+        }
+    ]
+}
